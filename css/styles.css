@@ -15,8 +15,20 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
@@ -46,9 +58,42 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ======================== END OF COMMON ========================= */
 
 /* ======================== HEADER ========================= */
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+  /* min-height: 80px; */
+}
+
+.page-header .container {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+}
+
+.page-header .link {
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page-header .item + .item {
+  margin-left: 50px;
+}
+
+.page-header .list {
+  display: flex;
+  align-items: center;
+}
 
 /* logo */
 .logo {
@@ -57,6 +102,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-right: 93px;
 }
 
 .logo span {
@@ -68,18 +114,23 @@ body {
 }
 
 /* site-nav */
-.site-nav .link {
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav-list .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.site-nav .current-page {
+.current-page {
   color: var(--accent-color);
 }
 
-/* address */
 .page-header .address .link {
   color: var(--secondary-text-color);
 
@@ -93,6 +144,10 @@ body {
 .page-header .address .link:hover,
 .page-header .address .link:focus {
   color: var(--accent-color);
+}
+
+.page-header .address {
+  margin-left: auto;
 }
 
 /* ======================== END OF HEADER ========================= */
