@@ -165,8 +165,12 @@ img {
   color: var(--primary-white-color);
 }
 
+.hero-section .section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero-section .container {
-  padding: 200px 0;
   text-align: center;
 }
 
@@ -204,7 +208,7 @@ img {
 
 /* ======================== ADVANTAGES ========================= */
 
-.advantages-section .container {
+.advantages-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -242,7 +246,7 @@ img {
 /* ======================== END OF ADVANTAGES ========================= */
 
 /* ======================== ACTIVITY ========================= */
-.activity-section .container {
+.activity-section {
   padding-bottom: 94px;
 }
 
@@ -266,7 +270,7 @@ img {
 .our-team-bg-color {
   background-color: var(--accent-background-color);
 }
-.our-team-section .container {
+.our-team-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -312,9 +316,6 @@ img {
 
 .page-footer {
   background-color: var(--secondary-background-color);
-}
-
-.page-footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -349,7 +350,7 @@ img {
 
 /* ======================== OUR WORKS ====================== */
 
-.our-works-section .container {
+.our-works-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
